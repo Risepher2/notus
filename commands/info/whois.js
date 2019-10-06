@@ -19,7 +19,7 @@ module.exports = {
         const created = formatDate(member.user.createdAt);
 
         const embed = new RichEmbed()
-            .setFooter(member.displayName, member.user.displayAvatarURL)
+            .setFooter(member.id, member.user.displayAvatarURL)
             .setThumbnail(member.user.displayAvatarURL)
             .setColor(member.displayHexColor === '#000000' ? '#ffffff' : member.displayHexColor)
 
