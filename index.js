@@ -29,7 +29,7 @@ client.on("ready", () => {
 });
 
 client.on("message", async message => {
-    const prefix = "n!";
+    const prefix = "n*";
 
     if(message.author.bot) return;
     if (!message.guild) return;
