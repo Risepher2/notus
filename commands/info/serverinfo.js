@@ -9,7 +9,7 @@ module.exports = {
         .setTitle("Server Information")
         .setDescription(`Information about ` + message.guild.name)
         .setColor("#e3ae42")
-        .setThumbnail(member.guild.sicon)
+        .setThumbnail(message.guild.sicon)
         .addField("Server Name", message.guild.name, true)
         .addField("Server ID", message.guild.id, true)
         .addField("Created On", message.guild.createdAt, true)
