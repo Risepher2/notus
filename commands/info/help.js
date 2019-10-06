@@ -16,6 +16,7 @@ module.exports = {
             .addField("Moderation", "`kick`, `ban`, `report`")
             .addField("Posting", "`say`, `say embed`")
             .addField("Support Server", "`https://discord.gg/jvW6nHd`")
+            .addField("Note from Developer", "`Notus is being rewritten.`")
             .setFooter("Developed by TotallyNotArchie#0001")
 
             .setTimestamp()
