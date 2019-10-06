@@ -12,6 +12,7 @@ module.exports = {
         .setColor("#e3ae42")
         .setThumbnail(sicon)
         .addField("Server Name", message.guild.name, true)
+        .addField("Server ID", message.guild.id, true)
         .addField("Created On", message.guild.createdAt, true)
         .addField("You Joined", message.member.joinedAt, true)
         .addField("Total Members", message.guild.memberCount, true);
