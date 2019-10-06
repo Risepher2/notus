@@ -6,7 +6,7 @@ module.exports = {
     description: "Returns server information",
     run: async (client, message, args) => {
         let sicon = message.guild.iconURL;
-        let serverembed = new Discord.RichEmbed()
+        let embed = new RichEmbed()
         .setDescription("Server Information")
         .setColor("#15f153")
         .setThumbnail(sicon)
@@ -15,6 +15,6 @@ module.exports = {
         .addField("You Joined", message.member.joinedAt)
         .addField("Total Members", message.guild.memberCount);
     
-        message.channel.send(serverembed);
+        message.channel.send(embed);
     }
 }
