@@ -5,12 +5,11 @@ module.exports = {
     category: "info",
     description: "Returns server information",
     run: async (client, message, args) => {
-        let sicon = message.guild.iconURL;
         let embed = new RichEmbed()
         .setTitle("Server Information")
         .setDescription(`Information about ` + message.guild.name)
         .setColor("#e3ae42")
-        .setThumbnail(sicon)
+        .setThumbnail(member.guild.sicon)
         .addField("Server Name", message.guild.name, true)
         .addField("Server ID", message.guild.id, true)
         .addField("Created On", message.guild.createdAt, true)
