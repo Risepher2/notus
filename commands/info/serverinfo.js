@@ -5,7 +5,7 @@ module.exports = {
     category: "info",
     description: "Returns server information",
     run: async (client, message, args) => {
-        let sEmbed = new Discord.RichEmbed()
+        let sEmbed = new RichEmbed()
         .setColor(colours.red)
         .setTitle("Server Information")
         .setThumbnail(message.guild.iconURL)
