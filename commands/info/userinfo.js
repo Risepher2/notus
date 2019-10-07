@@ -9,7 +9,7 @@ module.exports = {
     description: "Returns user information",
     usage: "[username | id | mention]",
     run: (client, message, args) => {
-        let uEmbed = new Discord.RichEmbed()
+        let uEmbed = new RichEmbed()
         .setColor(colours.pink)
         .setTitle("User Information")
         .setThumbnail(message.author.displayAvatarURL)
