@@ -17,7 +17,7 @@ module.exports = {
         .addField("User ID", `${message.author.id}`, true)
         .addField("Status", `${message.author.presence.status}`, true)
         .addField("Created At", `${message.author.createdAt}`, true)
-        .setFooter(`${bot.user.tag}`, bot.user.displayAvatarURL);
+        .setFooter(`${client.user.tag}`, client.user.displayAvatarURL);
         message.channel.send({embed: uEmbed});
     }
 }
