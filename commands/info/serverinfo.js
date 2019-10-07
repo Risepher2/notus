@@ -14,7 +14,7 @@ module.exports = {
         .addField("Guild Owner", `${message.guild.owner}`, true)
         .addField("Member Count", `${message.guild.memberCount}`, true)
         .addField("Role Count", `${message.guild.roles.size}`, true)
-        .setFooter(`${bot.user.tag}`, bot.user.displayAvatarURL);
+        .setFooter(`${client.user.tag}`, client.user.displayAvatarURL);
         message.channel.send({embed: sEmbed});
     }
 }
