@@ -1,5 +1,4 @@
 const { RichEmbed } = require("discord.js");
-const { stripIndents } = require("common-tags");
 const { getMember, formatDate } = require("../../functions.js");
 
 module.exports = {
@@ -10,7 +9,7 @@ module.exports = {
     usage: "[username | id | mention]",
     run: (client, message, args) => {
         let uEmbed = new RichEmbed()
-        .setColor(colours.pink)
+        .setColor("#e3ae42")
         .setTitle("User Information")
         .setThumbnail(message.author.displayAvatarURL)
         .addField("Username", `${message.author.username}`, true)
