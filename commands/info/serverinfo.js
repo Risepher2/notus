@@ -6,7 +6,7 @@ module.exports = {
     description: "Returns server information",
     run: async (client, message, args) => {
         let sEmbed = new RichEmbed()
-        .setColor(colours.red)
+        .setColor("#e3ae42")
         .setTitle("Server Information")
         .setThumbnail(message.guild.iconURL)
         .addField("Guild Name", `${message.guild.name}`, true)
