@@ -21,7 +21,7 @@ client.on("ready", () => {
 
     client.user.setPresence({
         game: {
-            name: `for n*help | client.guilds.size servers`,
+            name: `{client.guilds.size} servers`,
             type: "WATCHING"
 
         }
